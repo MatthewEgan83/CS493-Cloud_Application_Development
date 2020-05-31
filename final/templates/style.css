@@ -1,0 +1,79 @@
+﻿/***********************************************************************
+     Name: Matthew Egan
+     Date: April 14, 2019
+     Description: CSS file for simple web page
+          *EC: alternate colors of rows in table, odd rows are goldenrod,
+          even rows are skyblue
+          *Italicize 1st column (and not bold) of table, but not footer
+          *Make outer div have pink background and take up 75% of width of page,
+          and center inner div in outer div, and make inner div take up 75% of outer div
+
+
+************************************************************************/
+
+.button{
+	width: 50%;
+	color: black;
+	border-style: solid;
+	border-color: white;
+	font-weight: bold;
+	background-color: rgb(240, 87, 27);
+	
+}
+
+body{
+	background-color: rgb(194, 237, 240);
+	color: rgb(74, 1, 102);
+}
+
+
+
+
+table{
+     border-style: solid;
+     width: 50%;
+     margin-left:auto; 
+     margin-right:auto;
+}
+
+th, td {
+     border-style:solid;
+     border-color: rgb(55, 42, 100);
+     
+}
+
+/*making headers in the first column of each row italicized and not bold*/
+tbody th{
+     font-weight: normal;
+     font-style: italic;
+}
+
+/*alternating colors of rows in table*/
+tbody tr:nth-of-type(odd){
+     background-color: goldenrod;
+}
+
+tbody tr:nth-of-type(even){
+     background-color: skyblue;
+}
+
+/*making the name/title of the list bold*/
+dt{
+     font-weight: bold;
+}
+
+.outer-content{
+     background-color: lightpink;
+     width: 75%;
+     position: relative;
+     padding: 20px;      /*20px padding between elements*/
+}
+/*Some code below adapted from https://stackoverflow.com/questions/15376634/how-can-i-center-a-div-within-another-div -->*/
+.inner-content {
+     background-color: aqua;
+     text-align: center;      /*center text*/
+     width: 75%;    /*inner div only takes up 75% of outer div*/
+     height: auto;
+     margin: 0 auto;     /*centered in outer div*/
+     position: relative;
+}
