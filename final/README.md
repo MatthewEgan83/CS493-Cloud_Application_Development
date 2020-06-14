@@ -5,11 +5,11 @@ The eganmat_project.pdf document describes the steps to be taken in order to tes
 Testing was done using Postman to verify the API was performing correct.
 
 
-##Project Description
+## Project Description
 Instructions
 Your application needs to have one entity to model the user and at least two other non-user entities. The two non-user entities need to be related to each other and the user needs to be related to at least one of the non-user entities.
 
-##Example
+## Example
 Looking back at the assignments you have done, let's consider Assignment 4
 
 There were two entities Boat and Load. This would meet the requirement for two non-user entities.
@@ -18,7 +18,7 @@ Assignment 4 didn't model users. If you were adapting Assignment 4 for this proj
 Additionally for this project, you need a relationship between the User entity and a non-user entity. If you were to enhance Assignment 4 so that a boat is owned by a user, then there would be a relationship between the User and Boat entities . This meets the requirement of User entity being related to at least one of the non-user entities.
 Note: It is up to you to decide what entities your application has and what is the relationship between them. You are free to adapt a previous assignment for this project or have an entirely different data model as long as the requirements are met.
 
-##Requirements for non-user entities
+## Requirements for non-user entities
 For each entity a collection URL must be provided that is represented  by the collection name.
 E.g.,  /boats represents the boats collection
 The collection URL should show all the entities in the collection regardless of ownership and must not be a protected resource.
@@ -42,7 +42,8 @@ Requests to some endpoints, e.g., GET don't have a body. This point doesn't appl
  Any response bodies should be in JSON.
 Responses from some endpoints, e.g., DELETE, don't have a body. This point doesn't apply to such endpoints.
 Any request to an endpoint that will send back a response with a body must include 'application/json' in the accept header. If it doesn't have such a header, such a request should be rejected.
-User Details
+
+## User Details
 You must have a User entity in your database.
 You must support the ability for users of the application to create user accounts. There is no requirement to edit or delete users.
 You may choose from the following methods of handling user accounts
@@ -56,7 +57,7 @@ E.g., a boat may have an owner and only the owner who created it can edit or del
 You must provide a REST API endpoint so that a user can see all the instances of the non-user entity that were created by them.
 
 
-##Status Codes
+## Status Codes
 Your application should support at least the following status codes
 
 200
